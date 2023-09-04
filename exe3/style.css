@@ -1,32 +1,37 @@
-.icon-pic{
+.icon-pic {
   width: 20px;
   height: 20px;
 }
-div{
+
+div {
   width: 400px;
 }
-body{
+
+body {
   margin: 50px 10px;
 }
 
-#title{
+#title {
   font-size: larger;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#sub-title{
+#sub-title {
   font-size: medium;
   font-family: cursive;
 }
 
-p, #sub-title{
+p,
+#sub-title {
   background-color: beige;
 }
-ul, #title{
+
+ul,
+#title {
   background-color: blanchedalmond;
 }
 
-.points{
+.points {
   color: blue;
   font-weight: bold;
   font: 1em sans-serif;
