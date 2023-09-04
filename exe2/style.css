@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+}
+
+#mainDiv {
+  background-color: blanchedalmond;
+  width: 280px;
+  height: 300px;
+}
+img {
+  width: 280px;
+}
+
+#title {
+  font-size: medium;
+  font-weight: bold;
+}
+
+#more {
+  font-size: smaller;
+}
+
+a {
+  font-size: x-small;
+  color: rgb(189, 130, 59);
+}
