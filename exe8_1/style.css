@@ -1,0 +1,20 @@
+#outer {
+  width: 100px;
+  height: 100px;
+  background: darkcyan;
+  margin: 50px;
+}
+#inner {
+  width: 50px;
+  height: 50px;
+  background: lightgreen;
+  /* position: absolute;
+    because absolute position depends to:
+    1. not related to normal flow
+    2. sliding from the top 10px, from the screen not the outer container 
+    
+    fixing this position with relative so it saves his normal flow place and slides from top of the outer container as commanded
+  */
+  position: relative;
+  top: 10px;
+}
