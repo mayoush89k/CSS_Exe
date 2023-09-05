@@ -1,0 +1,40 @@
+body{
+    border: 1px solid black;
+    padding: 5px 0;
+}
+.container {
+margin: auto;
+width: 50%;
+}
+* {
+box-sizing: border-box;
+}
+
+.box {
+background-color: lightgrey;
+border: 1px solid black;
+padding: 10px;
+margin: 2px 1px;
+}
+#header {
+background-color: chocolate;
+text-align: center;
+}
+#side {
+  background-color: green;
+float: left;
+width: 49%;
+height: 100px;
+}
+#main {
+background-color: purple;
+float: right;
+width: 49%;
+height: 100px;
+text-align: right;
+}
+#footer {
+background-color: blue;
+text-align: center;
+display: flow-root;
+}
