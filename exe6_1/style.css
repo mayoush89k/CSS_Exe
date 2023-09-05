@@ -23,13 +23,13 @@ body {
 #side {
   background-color: green;
   float: left;
-  width: 49%;
+  width: 38%;
   height: 100px;
 }
 #main {
   background-color: purple;
   float: right;
-  width: 49%;
+  width: 60%;
   height: 100px;
   text-align: right;
 }
