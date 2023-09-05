@@ -1,0 +1,101 @@
+body {
+  background-color: rgb(39, 83, 128);
+}
+.container {
+  margin: auto;
+  width: 60%;
+}
+* {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/*coloring buttons*/
+#regFlat {
+  background-color: rgb(19, 163, 252);
+}
+#subFlat {
+  background-color: rgb(227, 227, 2);;
+}
+#regRound {
+  background-color: green;
+}
+#subRound {
+  background-color: red;
+}
+#regFlatGhost {
+  background-color: rgb(39, 83, 128);
+  border: 1px solid red;
+}
+#subFlatGhost {
+  background-color: rgb(39, 83, 128);
+  border: 1px solid purple;
+}
+#regRoundGhost {
+  background-color: rgb(39, 83, 128);
+  border: 1px solid rgb(227, 227, 2);;
+}
+#subRoundGhost {
+  background-color: rgb(39, 83, 128);
+  border: 1px solid skyblue;
+}
+
+/*bottun radius / style */
+#regRound,
+#subRound,
+#regRoundGhost,
+#subRoundGhost {
+  border-radius: 20px;
+}
+
+/*Button Sizes*/
+/*float layouts*/
+#regFlat,
+#regRound,
+#regFlatGhost,
+#regRoundGhost {
+    padding: 5%;
+    margin: 2%;
+    font-size: large;
+    float: left;
+}
+#subFlat,
+#subRound,
+#subFlatGhost,
+#subRoundGhost {
+    padding: 2%;
+    margin: 5%;
+    font-size: medium;
+  float: right;
+}
+header,main,aside, footer{
+    display: block;
+    height: 150px;
+}
+
+/*mouse hover*/
+#regFlat:hover {
+    background-color: rgb(2, 146, 236);
+  }
+  #subFlat:hover {
+    background-color: rgb(183, 183, 1);
+  }
+  #regRound:hover {
+    background-color: rgb(1, 82, 1);
+  }
+  #subRound:hover {
+    background-color: rgb(194, 4, 4);
+  }
+  #regFlatGhost:hover {
+    background-color:  red;
+  }
+  #subFlatGhost:hover {
+    background-color: purple;
+  }
+  #regRoundGhost:hover {
+    background-color: rgb(227, 227, 2);;
+  }
+  #subRoundGhost:hover {
+    background-color: skyblue;
+  }
