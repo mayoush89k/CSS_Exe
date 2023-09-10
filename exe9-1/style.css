@@ -1,0 +1,64 @@
+body {
+  background-color: aqua;
+}
+
+#title {
+  text-align: center;
+  padding: 10%;
+  max-width: 80%;
+}
+
+#title h1 {
+  display: none;
+}
+
+@media (min-height: 501px) {
+  /* wide Screen */
+  @media (min-width: 1201px) {
+    body {
+      background-color: brown;
+      color: white;
+    }
+    #title #wideScreen {
+      display: block;
+    }
+  }
+  /* Normal */
+  @media (min-width: 769px) and (max-width: 1200px) {
+    body {
+      background-color: green;
+      color: white;
+    }
+    #title #normal {
+      display: block;
+    }
+  }
+
+  /* Tablet */
+  @media (min-width: 501px) and (max-width: 768px) {
+    body {
+      background-color: aquamarine;
+    }
+    #title #tablet {
+      display: block;
+    }
+  }
+  /* smartphones */
+  @media (max-width: 500px) {
+    body {
+      background-color: bisque;
+    }
+    #title #smartPhone {
+      display: block;
+    }
+  }
+}
+/* LandScape */
+@media (max-height: 500px) and (min-width: 20px) and (max-width: 1500px) {
+  body {
+    background-color: orange;
+  }
+  #title #landScape {
+    display: block;
+  }
+}
