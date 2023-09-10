@@ -1,0 +1,28 @@
+main{
+    height: 100vh;
+}
+
+#container{
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+#box1{
+    background-color: blue;
+
+}
+
+#box2{
+    background-color: green;
+}
+
+#box3{
+    background-color: red;
+}
