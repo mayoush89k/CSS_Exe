@@ -1,0 +1,36 @@
+main {
+  margin: auto;
+  max-width: 450px;
+}
+
+#box {
+  background-color: black;
+  color: white;
+  padding: 70px;
+  font-size: 3rem;
+  position: relative;
+}
+p {
+  border: 5px solid red;
+  padding: 22px;
+  height: 60px;
+}
+p::after, p::before{
+    position: absolute;
+    background-color: black;
+
+}
+p::after {
+  content: "Cool Border";
+  width: 300px;
+  height: 60px;
+  left: 0;
+  padding-left: 100px;
+}
+p::before {
+  content: "";
+  width: 270px;
+  height: 350px;
+  top: 0px;
+  left: 90px;
+}
