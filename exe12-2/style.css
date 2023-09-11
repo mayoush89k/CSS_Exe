@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    position: relative;
+    
+}
+
+#mainBox{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+}
+
+#mainBox::before {
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    content: "";
+    background-color: purple;
+}
