@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+    max-width: 90%;
+    text-align: justify;
+}
+
+a{
+    position: relative
+}
+
+a:hover::after , a:first-child:hover::after{
+    position: absolute;
+    content: "This is Tooltip";
+    color: green;
+    background-color: yellow;
+    width: 110px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+a:hover::after{
+    top: -40px;
+    left: -20px;
+}
+
+a:first-child:hover::after{
+    top: 5px; 
+}
