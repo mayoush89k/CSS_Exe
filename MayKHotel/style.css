@@ -8,6 +8,7 @@ nav {
   overflow: auto;
 }
 #search{
+  width: 2%;
   float: right;
 }
 
@@ -41,9 +42,7 @@ header section {
   padding: 3vh 4vw;
   color: black;
 }
-.menu a img {
-  width: 2%;
-}
+
 .menu a:hover, #submit:hover, 
 .current {
   background-color: rgb(245, 193, 8);
