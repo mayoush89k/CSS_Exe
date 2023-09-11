@@ -9,7 +9,7 @@ main{
 #mainBox{
     width: 500px;
     height: 500px;
-    background-color: blue;
+    background-color: red;
     position: relative;
 }
 
@@ -18,9 +18,5 @@ main{
     width: 250px;
     height: 500px;
     content: "";
-    background-color: red;
-}
-#mainBox:hover::before{
-    
     background-color: purple;
 }
