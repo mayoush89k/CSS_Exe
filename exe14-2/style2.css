@@ -77,7 +77,7 @@
   background-color: yellow;
   width: 150px;
   height: 350px;
-  transform: translate(-150px, -120px);
+  transform: translate(-160px, -120px);
   z-index: -10;
 }
 #b3:hover::before {
