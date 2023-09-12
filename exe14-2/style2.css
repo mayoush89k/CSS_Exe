@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
-  
 }
 
 #b1,
@@ -58,6 +57,7 @@
   content: "";
   background-color: blue;
   transform: translate(-420px, -100px);
+  z-index: -10;
 }
 #b2:hover::before {
   animation: b2-ani 2s;
@@ -78,8 +78,9 @@
   width: 150px;
   height: 350px;
   transform: translate(-150px, -120px);
+  z-index: -10;
 }
-#b3:hover::before{
+#b3:hover::before {
   animation: b3-ani 2s;
 }
 
@@ -88,7 +89,7 @@
     transform: translate(-150px, -120px) rotate(0);
   }
   to {
-    transform: translate(10px, -170px) rotate(-90deg);;
+    transform: translate(10px, -170px) rotate(-90deg);
   }
 }
 
@@ -121,25 +122,39 @@
 }
 
 /* b5 - skew */
+#b5 {
+  width: 300px;
+  height: 100px;
+}
 #b5::before {
-  content: "";
+  width: 300px;
+  height: 50px;
+  content: "Skew";
+  color: white;
   background-color: pink;
-  transform: translate(-10px, -90px);
+  transform: translate(-10px, -10px);
+  z-index: -10;
   display: none;
 }
 #b5:hover::before {
   display: block;
-  animation: b5-ani 2s;
-  content: "skew";
-  width: 300px;
-  height: 100px;
+  animation: b5-ani 1s alternate-reverse infinite;
 }
 
 @keyframes b5-ani {
-  from {
-    transform: translate(-10px , -90px) skew(0);
+  0% {
+    transform: skew(0);
   }
-  to {
-    transform: translate(-10px , -90px) skew(20deg);
+  25% {
+    transform: skew(10deg);
+  }
+  50% {
+    transform: skew(40deg);
+  }
+  75% {
+    transform: skew(60deg);
+  }
+  100% {
+    transform: skew(100deg);
   }
 }
