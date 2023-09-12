@@ -1,3 +1,14 @@
+/* 13 -2 new lines */
+:root{
+  --light-color:#f4f4f4;
+  --primary-color: steelblue;
+  --secondary-color: black;
+  --title-background:beige;
+  --subtitle-background:blanchedalmond;
+  --secondary-font-size: calc(0.5rem + 0.5vw);
+  --primary-font-size: calc(0.60rem + 0.5vw);
+}
+
 body {
   margin: 5px 10px;
 }
@@ -15,23 +26,24 @@ body {
 
 p,
 #sub-title {
-  background-color: beige;
+  background-color: var(--title-background);
+  color: var(--secondary-color);
 }
 
 ul,
 #title {
-  background-color: blanchedalmond;
+  background-color: var(--subtitle-background);
 }
 
 em {
-  color: blue;
+  color: var(--primary-color);
   font-weight: bold;
   font: 1em sans-serif;
 }
 
 .card {
   border: 1px solid black;
-  background-color: blanchedalmond;
+  background-color: var(--subtitle-background);
   margin: 10px;
   padding: 1%;
   float: left;
@@ -107,8 +119,8 @@ footer li {
 }
 
 .navSection {
-  background-color: black;
-  color: beige;
+  background-color: var(--primary-color);
+  color: var(--title-background);
   display: inline-block;
   width: 20%;
   margin: 0 1%;
@@ -117,8 +129,8 @@ footer li {
   font-weight: bold;
 }
 .navSection:hover {
-  background-color: beige;
-  color: black;
+  background-color: var(--title-background);
+  color: var(--primary-color);
 }
 main {
   margin-top: 10%;
@@ -165,10 +177,15 @@ main {
 /* 10 - 2 changes */
 #sub-title, .card, section ul, aside p , footer li, button{
 
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: var(--secondary-font-size)
 
 }
 em , footer ul{
-  font-size: calc(0.60rem + 0.5vw);
+  font-size: var(--primary-font-size)
 
 }
+
+/* 13 - 2 
+
+changing all color's reference to variable 
+and also font size */
