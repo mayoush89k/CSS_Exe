@@ -68,7 +68,6 @@ body {
 /* tablet */
 @media (max-width: 800px) {
   .container {
-    gap: 1px;
     grid-template-columns: repeat(6, 10vw);
     grid-template-rows: repeat(8, 10vh);
     grid-template-areas:
@@ -87,7 +86,6 @@ body {
  /* phone */
 @media (max-width: 500px) {
   .container {
-    gap: 1px;
     grid-template-columns: repeat(8, 10vw);
     grid-template-rows: repeat(8, 10vh);
     grid-template-areas:
