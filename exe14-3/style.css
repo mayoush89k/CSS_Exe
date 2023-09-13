@@ -1,0 +1,74 @@
+body {
+  margin: auto;
+  max-width: 50%;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+.items {
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#item1::before,
+#item2::before,
+#item3::before,
+#item4::before,
+#item5::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  top: -2px;
+  left: -100px;
+  background-color: black;
+}
+#item1::after,
+#item2::after,
+#item3::after,
+#item4::after,
+#item5::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  bottom: -2px;
+  left: 100px;
+  background-color: black;
+}
+#item1:hover::before,
+#item2:hover::before,
+#item3:hover::before,
+#item4:hover::before,
+#item5:hover::before {
+    animation: move-right 1s;
+}
+#item1:hover::after,
+#item2:hover::after,
+#item3:hover::after,
+#item4:hover::after,
+#item5:hover::after {
+    animation: move-left 1s;
+}
+
+@keyframes move-right{
+    from{
+        transform : translate(-10px , 0)
+    }
+    to{
+        transform : translate(150px , 0)
+    }
+}
+@keyframes move-left{
+    from{
+        transform : translate(100px , 0)
+    }
+    to{
+        transform : translate(-150px , 0)
+    }
+}
