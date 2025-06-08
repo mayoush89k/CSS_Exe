@@ -10,16 +10,16 @@
   <body>
     <!-- 7.2 new Lines-->
     <nav class="navigationBar">
-      <section class="navSection">Home</section>
-      <section class="navSection">About Me</section>
-      <section class="navSection">Hobbies</section>
-      <section class="navSection">Contact Me</section>
+     <a class="navSection" href="#home">Home</a
+      ><a class="navSection" href="#about_me">About Me</a
+      ><a class="navSection" href="#hobbies">Hobbies</a
+      ><a class="navSection" href="#follow_me">Follow Me</a>
     </nav>
     <section id="menu_mobile">
       <img src="./images/menu icon.png" />
     </section>
     <main>
-      <section>
+      <section id="home">
         <h3 id="title">Hi everyone, My Name is May Karam</h3>
         <h5 id="sub-title">I am a Web Developer</h5>
       </section>
@@ -27,13 +27,13 @@
         <img src="./images/myPic.jpeg" alt="my picture" />
       </section>
     </main>
-    <aside>
-      <p>
+    <aside id="about_me">
+     <p>
         <em>Coding </em> means everything to me. I can't imagine my future
-        without being in a huge <em> high-tech</em> company.
+        working at a major <em> high-tech</em> company.
         <img src="./images/developer.png" class="icon-pic" />
-        I have started learning by myself since I finished college, I have
-        learnt<em> Python</em> computer language.
+        Since finishing college, I’ve been self-learning and have already
+        learned the <em> Python</em> programming language.
         <img src="./images/python-icon.png" class="icon-pic" />
       </p>
       <section>
@@ -52,8 +52,10 @@
         </ul>
       </section>
     </aside>
-    <aside>
+    <aside id="hobbies">
       <section>I like watching <em>Movies</em> like:</section>
+    </aside>
+    <aside class="cards-container">
       <section class="card">
         <img
           src="https://resizing.flixster.com/_GrCbFNcz21ZlOhK0rGPoz2Zis8=/206x305/v2/https://flxt.tmsimg.com/assets/p13937884_p_v8_ab.jpg"
@@ -89,31 +91,30 @@
           <li>Jamie Foxx</li>
         </ul>
       </section>
+      </aside>
+    <aside class="links-container">
       <!-- 7.2 new Lines-->
-      <section>
-        <a
-          class="links"
-          href="https://www.imdb.com/title/tt1270797/?ref_=hm_rvi_tt_i_1"
-        >
-          <button>Link To IMDB</button>
-        </a>
-        <a
-          class="links"
-          href="https://www.imdb.com/title/tt3794354/?ref_=hm_rvi_tt_i_2"
-        >
-          <button>Link To IMDB</button>
-        </a>
-        <a
-          class="links"
-          href="https://www.imdb.com/title/tt2334879/?ref_=hm_rvi_tt_i_4"
-        >
-          <button>Link To IMDB</button>
-        </a>
+      <a
+        class="links"
+        href="https://www.imdb.com/title/tt1270797/?ref_=hm_rvi_tt_i_1"
+        ><button>Link To IMDB</button>
+      </a>
+      <a
+        class="links"
+        href="https://www.imdb.com/title/tt3794354/?ref_=hm_rvi_tt_i_2"
+      >
+        <button>Link To IMDB</button>
+      </a>
+      <a
+        class="links"
+        href="https://www.imdb.com/title/tt2334879/?ref_=hm_rvi_tt_i_4"
+      ><button>Link To IMDB</button>
+      </a>
       </section>
     </aside>
 
-    <footer>
-      <ul>
+    <footer id="follow_me">
+       <ul>
         Follow me
         <li>
           <a href="https://www.facebook.com/meme.fcb" target="_blank"
