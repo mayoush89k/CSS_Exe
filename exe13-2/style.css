@@ -1,12 +1,12 @@
 /* 13 -2 new lines */
-:root{
-  --light-color:#f4f4f4;
+:root {
+  --light-color: #f4f4f4;
   --primary-color: steelblue;
   --secondary-color: black;
-  --title-background:beige;
-  --subtitle-background:blanchedalmond;
+  --title-background: beige;
+  --subtitle-background: blanchedalmond;
   --secondary-font-size: calc(0.5rem + 0.5vw);
-  --primary-font-size: calc(0.60rem + 0.5vw);
+  --primary-font-size: calc(0.6rem + 0.5vw);
 }
 
 body {
@@ -29,7 +29,12 @@ p,
   background-color: var(--title-background);
   color: var(--secondary-color);
 }
-
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 ul,
 #title {
   background-color: var(--subtitle-background);
@@ -49,7 +54,6 @@ em {
   float: left;
   width: 27%;
   height: 400px;
-
 }
 
 .card img {
@@ -58,17 +62,21 @@ em {
 }
 
 .icon-pic {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
-
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 section img {
   margin: 0 25%;
 }
 
 section ul {
   padding: 5 20px;
-
 }
 
 aside,
@@ -96,7 +104,6 @@ footer {
 footer ul {
   height: 40px;
   padding-top: 10px;
-
 }
 
 footer li img {
@@ -108,7 +115,6 @@ footer li {
   float: right;
   width: 20%;
   height: 40%;
-
 }
 
 /*7-2 updates*/
@@ -136,12 +142,11 @@ main {
   margin-top: 10%;
 }
 .links {
-  float: left;
-  width: 20%;
+  float: inline-end;
+  width: 80%;
   margin: 0% 3%;
   padding: 0 3.5%;
   float: left;
-  
 }
 
 /* 9.4 Changes */
@@ -169,20 +174,23 @@ main {
     margin: auto;
     display: contents;
   }
-  .card img{
+  .card img {
     width: 60%;
   }
 }
 
 /* 10 - 2 changes */
-#sub-title, .card, section ul, aside p , footer li, button{
-
-  font-size: var(--secondary-font-size)
-
+#sub-title,
+.card,
+section ul,
+aside p,
+footer li,
+button {
+  font-size: var(--secondary-font-size);
 }
-em , footer ul{
-  font-size: var(--primary-font-size)
-
+em,
+footer ul {
+  font-size: var(--primary-font-size);
 }
 
 /* 13 - 2 
